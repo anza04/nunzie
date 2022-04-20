@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quante Nunzie sei alto?</title>
+</head>
+<body>
+    <div class="title">QUANTE NUNZIE SEI ALTO?</div>
+    <input type="text" id="input" placeholder="altezza">
+    <button onclick="Calcola()">INVIA</button>
+    <label for="risultato" id="result"></label>
+    <script>
+        function Calcola(){
+            var value = document.getElementById("input").value;
+            console.log(value);
+            document.getElementById("result").innerText=value/152 + " nunzie";
+        }
+    </script>
+</body>
+</html>
